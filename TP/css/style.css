@@ -46,6 +46,30 @@ header {
     font-weight: bold;    
   }
 
+.footer {
+    background-color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+.texto-footer {
+    font-family: sans-serif;
+    text-align: center;
+    color: #fff;
+  }
+
+.redes-sociales {
+    display: flex;
+    align-items: center;    
+  }
+
+.redes-sociales img {
+    width: 30px; /* Tamaño de las imágenes (ajusta según tus necesidades) */
+    margin-right: 10px; /* Espacio entre imágenes */
+  }
 /* Media query para pantallas más pequeñas, como teléfonos */
 @media (max-width: 768px) {
     header {
