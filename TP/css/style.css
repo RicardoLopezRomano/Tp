@@ -67,9 +67,15 @@ header {
   }
 
 .redes-sociales img {
-    width: 30px; /* Tamaño de las imágenes (ajusta según tus necesidades) */
-    margin-right: 10px; /* Espacio entre imágenes */
+    width: 30px; 
+    margin-right: 10px;
+    transition: transform 0.2s;
   }
+
+  .redes-sociales img:hover {
+    transform: scale(1.2);
+  }
+
 /* Media query para pantallas más pequeñas, como teléfonos */
 @media (max-width: 768px) {
     header {
