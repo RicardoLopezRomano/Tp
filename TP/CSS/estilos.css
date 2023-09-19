@@ -59,3 +59,59 @@ label {
 .icono:hover {
     background-color: yellow;
  }
+
+.input {
+    height: 2.5em;
+    width: 35em;
+    border-style: none;
+}
+
+#borrar {
+    width: 75em;
+    height: 3em;
+    background-color: red;
+    border-radius: 5px;
+    border-style: none;
+    color: white;
+    font-weight: bold;
+}
+
+#enviar {
+    width: 75em;
+    height: 3em;
+    background-color: green;
+    border-radius: 5px;
+    border-style: none;
+    color: white;
+    font-weight: bold;
+}
+
+.centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+#contenedor {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.estreno {
+    padding: 2%;
+}
+
+h2{
+    text-decoration: underline;
+}
+
+main div {
+    padding: 1%;
+}
+
+article {
+    align-items: center;
+    text-align: center;
+}
