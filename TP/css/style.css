@@ -42,7 +42,7 @@ header {
 #navbar a {
     font-family: sans-serif;
     text-decoration: none;
-    color: #fff; 
+    color: yellow;
     font-weight: bold;    
   }
 /* ========= FIN HEADER ========= */
@@ -60,7 +60,7 @@ header {
 .texto-footer {
     font-family: sans-serif;
     text-align: center;
-    color: #fff;
+    color: yellow;
   }
 
 .redes-sociales {
