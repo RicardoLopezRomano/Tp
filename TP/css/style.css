@@ -40,7 +40,7 @@ header {
   }
 
 #navbar a {
-    font-family: sans-serif;
+    font-family: 'Maven Pro', sans-serif;
     text-decoration: none;
     color: yellow;
     font-weight: bold;    
@@ -58,7 +58,7 @@ header {
   }
 
 .texto-footer {
-    font-family: sans-serif;
+    font-family: 'Maven Pro', sans-serif;
     text-align: center;
     color: yellow;
   }
