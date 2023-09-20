@@ -5,30 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon2.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilo.css">
     <title>Cinema</title>
 </head>
 
 <body>
     <header>
-        <a name="arriba"><img src="img/logo 2.png" alt="logo Cinema" width="250"></a>
-        <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
-        <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
-        <a href="https://twitter.com/" target="_blank"><img src="img/twitter.png" alt="Twitter"></a>
-        <p>/Cinemacines</p>
-        <p>Shopping Portal Tucumán <br> Yerba Buena - Tucumán - Argentina</p>
-        <hr>
+        <a name="arriba"><img id="logo" src="img/logo 2.png" alt="logo Cinema"></a><br>
 
-        <nav>
+        <!--Los logos de las redes sociales son, teoricamente, links a las paginas del cine. Como no existen solo llevan a las paginas principales de dichas redes. El texto /Cinemacines es como figuraria en dichas redes-->
+
+        <nav id="nav">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="proximosestrenos.html">Proximos Estrenos</a></li>
                 <li><a href="nuestrassalas.html">Nuestras Salas</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
-            <hr>
         </nav>
     </header>
-
     <main>
         <section>
             <form action="" method="">
@@ -92,28 +87,22 @@
                     <input type="submit" value="Enviar Datos">
                     <input type="reset" value="Borrar Datos">
                     <hr>
+                    <a href="#arriba" class="enlacp">Ir arriba</a><br>
                 </fieldset>
             </form>
         </section>
     </main>
 
-    <footer>
-        <hr>
-        <ul>
-            <li><a href="#arriba">Ir arriba</a></li>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="proximosestrenos.html">Proximos Estrenos</a></li>
-            <li><a href="nuestrassalas.html">Nuestras Salas</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-        <hr>
-        <img src="img/logo 2.png" alt="logo Cinema" width="250">
+    <footer class="footer">
+        <div>
         <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
         <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
         <a href="https://twitter.com/" target="_blank"><img src="img/twitter.png" alt="Twitter"></a>
-        <p>/Cinemacines</p>
+        </div>
+        <div>
+        <p>Cinemacines</p>
         <p>Shopping Portal Tucumán <br> Yerba Buena - Tucumán - Argentina</p>
-        <hr>
+        </div>
     </footer>
 
 </body>
