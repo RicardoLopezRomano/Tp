@@ -21,33 +21,38 @@ header {
     background-color: #333;
   }
 
-#navbar {
+#nav {
     text-align:  right;
     
 }
 
-#navbar ul {
+#nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
   }
 
-#navbar li {
+#nav li {
     display: inline-block;
     margin-right: 15px;
   }
 
-#navbar li:hover a{
+#nav li:hover a{
     color: #F26363;
     transition: background-color 0.3s;
   }
 
-#navbar a {
+#nav a {
     font-family: 'Maven Pro', sans-serif;
     text-decoration: none;
     color: yellow;
     font-weight: bold;    
+  }
+
+  .abrir-menu,
+  .cerrar-menu {
+      display: none;
   }
 /* ========= FIN HEADER ========= */
 
@@ -72,39 +77,99 @@ header {
     align-items: center;    
   }
 
-.redes-sociales img {
-    width: 30px; 
-    margin-right: 10px;
-    transition: transform 0.2s;
+  #redes {
+    font-size: x-large;
+    
+    color: yellow;
+    padding: 3px;
   }
 
-  .redes-sociales img:hover {
-    transform: scale(1.2);
-  }
 
 /* ========= FIN FOOTER ========= */
 
-/* Media query para pantallas chicas*/
+/* Media query para tablet*/
 @media (max-width: 768px) {
     header {
       flex-direction: column;
       text-align: center;
     }
   
-    #navbar {
+    #nav {
       margin-top: 20px;
     }
   
-    #navbar ul {
+    #nav ul {
       flex-direction: column;
       text-align: center;
     }
   
-    #navbar li {
+    #nav li {
       margin-right: 0;
       margin-bottom: 10px;
     }
   }
+
+/*Media query para telefono*/
+  @media screen and (max-width: 550px) {
+
+    header {
+      display: flex;       
+      justify-content: space-between;
+      padding: 1px 20px;
+      background-color: #333;
+      flex-direction: row;
+    }
+
+    .abrir-menu,
+    .cerrar-menu{      
+       display: block;
+       border: 0;
+       font-size: 1.25rem;
+       background-color: transparent;
+       cursor: pointer;
+   }
+   
+   .abrir-menu {
+       color: yellow;
+       display: flex;
+   }
+
+   .cerrar-menu{
+       color: yellow;
+   }
+   
+   .nav {
+       opacity: 0;
+       visibility: hidden;        
+       display: flex;
+       flex-direction: column;
+       align-items: end;   
+       gap: 1rem;
+       position: absolute;
+       top: 0;
+       right: 0;
+       bottom: 0;
+       background-color: #1c1c1c;
+       padding: 2rem;
+       box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);        
+   }
+
+   .nav.visible {
+       opacity: 1;
+       visibility: visible;
+   }
+   
+   .nav-list {
+       flex-direction: column;
+       align-items: end;
+   }
+
+   .nav-list li a {
+       text-decoration: none;
+       color: #ecececec;
+   }
+}
+  
 
   /*======INICIO FORM======*/
   .contacto {
