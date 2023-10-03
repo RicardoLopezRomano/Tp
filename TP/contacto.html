@@ -54,23 +54,22 @@
                     <input type="submit" value="Enviar Datos">
                     <input type="reset" value="Borrar Datos">
                 </form>
-                <form action="" method="">
+                <form action="" method="POST" onsubmit="return validarFormulario_contacto()">
                     <h2>Formulario de contacto</h2>                
                     <label for="nombre">Nombre: *</label>
-                    <input type="text" name="nombre" id="nombre" required>
+                    <input type="text" name="nombre" id="nombre_contacto" >
                     
                     <label for="apellido">Apellido: *</label>
-                    <input type="text" name="apellido" id="apellido" required>
+                    <input type="text" name="apellido" id="apellido_contacto" >
                     
                     <label for="correo">e-Mail: *</label>
-                    <input type="correo" name="correo" id="correo" placeholder="ejemplo@correo.com" required>
+                    <input type="correo" name="correo" id="correo_contacto" placeholder="ejemplo@correo.com" >
                     
-                    <label for="comentarios">Consulta:</label>
-                    <textarea name="comentarios" id="comentarios"  placeholder="Escriba su consulta..."
-                        required></textarea>
+                    <label for="comentarios">Consulta: *</label>
+                    <textarea name="comentarios" id="comentarios_contacto"  placeholder="Escriba su consulta..."></textarea>
                     <p class="campos-obligatorios">* Campos obligatorios</p>
-                    <input type="submit" value="Enviar Datos">
-                    <input type="reset" value="Borrar Datos">
+                    <input type="submit" value="Enviar comentarios">
+                    <input type="reset" value="Borrar">
                     
                 </form>
             </section>

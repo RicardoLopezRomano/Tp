@@ -29,3 +29,28 @@ function validarFormulario() {
     // en caso de estar todo ok, la info se envia
     return true;
 }
+
+
+function validarFormulario_contacto() {
+    // Obtener los valores ingresados por el usuario
+    let nombre = document.getElementById("nombre_contacto").value;
+    let apellido = document.getElementById("apellido_contacto").value;
+    let correo = document.getElementById("correo_contacto").value;
+    let comentarios = document.getElementById("comentarios_contacto").value;
+    
+    // Validar que los campos de nombre, apellido, correo y comentarios no esten vacios
+    if (nombre === "" || apellido === "" || correo === "" || comentarios === "") {
+        alert("Por favor, complete todos los campos obligatorios.");
+        return false;
+    }
+    
+    // Validar el formato del correo electrónico
+    let correoRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    if (!correo.match(correoRegex)) {
+        alert("Por favor, ingrese una dirección de correo electrónico válida.");
+        return false;
+    }
+    
+    // en caso de estar todo ok, el mail se envia
+    return true;
+}
