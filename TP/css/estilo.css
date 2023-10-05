@@ -172,7 +172,7 @@ header {
   
 
   /*======INICIO FORM======*/
-  .contacto {
+  .titulo {
     font-family: 'Maven Pro', sans-serif;
     background-color: #F26363;
     margin: 1%;
@@ -243,3 +243,40 @@ header {
     }
   }
 /*======FIN FORM======*/
+
+/*======INICIO INDEX======*/
+#container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#container section {
+  flex: 2;
+  flex-direction: row;
+  align-items: center;
+  margin: 8px;
+  padding: 13px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: rgb(165, 165, 165);
+  
+}
+
+#container section img {
+  box-shadow: 0 10px 6px -6px rgba(6,4,12,0.801);
+  max-width: 300px;
+  height: 450px;
+  border-radius: 5px;
+  transition: transform .5s ease;
+}
+
+#container section img:hover{
+  transform: scale(1.1);
+}
+
+h2 {
+  margin-bottom: 20px;
+  margin-top: auto;
+}
+/*======FIN INDEX======*/
