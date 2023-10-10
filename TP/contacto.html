@@ -5,82 +5,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon2.png" type="image/x-icon">
-    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
     <title>Cinema</title>
 </head>
 
 <body>
     <header>
-        <a name="arriba"><img src="img/logo 2.png" alt="logo Cinema" width="250"></a>
-        <nav>
+        <a name="arriba"><img id="logo" src="img/logo_transparent_2.png" alt="logo Cinema"></a>
+        <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
             <ul>
-                <li><a href="index.html" target="_blank">Inicio</a></li></li>
-                <li><a href="proximosestrenos.html" target="_blank">Proximos Estrenos</a></li>
-                <li><a href="nuestrassalas.html" target="_blank">Nuestras Salas</a></li>
-                <li><a href="contacto.html" target="_blank">Contacto</a></li>
-                <li><a href="registrese.html" target="_blank">Registrese</a></li>
-            </ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="proximosestrenos.html">Proximos Estrenos</a></li>
+                <li><a href="nuestrassalas.html">Nuestras Salas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>            
         </nav>
     </header>
 
+    
+    <h1 class="titulo">Contacto</h1>
     <main>
-        <section>
-            <form action="" method="">
-                <h2>Formulario de contacto</h2> <br>
-                <label for="nombre">Nombre: *</label>
-                <input type="text" name="nombre" class="input" required>
-                <br><br>
-                <label for="apellido">Apellido: *</label>
-                <input type="text" name="apellido" class="input" required>
-                <br><br>
-                <label for="correo">e-Mail: *</label>
-                <input type="correo" name="correo" class="input" placeholder="ejemplo@correo.com" required>
-                <br><br>
-                <label for="text">Consulta:</label>
-                <br>
-                <textarea name="text" class="input" cols="65" rows="3"></textarea>
-                <p>* Campos obligatorios</p>
-                <br><br>
-                <input type="reset" value="Borrar" id="borrar">
-                <br><br>
-                <input type="submit" value="Enviar" id="enviar">
-                <br>
-            </form>
-        </section>
-        <br>
-        <hr>
-
-        <section>
-            <h2>Contacto directo:</h2>
-            <!--Tanto el mail, como el whatsapp tienen mis datos, para comprobar que funcionen ambos links-->
-            <p>Email: Puede mandar un mail con su consulta a <a href="mailto:ric.alj@gmail.com" target="_blank">ric.alj@gmail.com </a>o haciendo click en el sigiente ìcono <a href="mailto:ric.alj@gmail.com" target="_blank"><img src="img/mail.png" alt="Enviar eMail"></a></p>
-            <br>
-            <hr>
-        </section>
-            <h2>¿Donde estamos?</h2>
-            <br>
-            <h3>Portal Tucumán:<a href="https://maps.app.goo.gl/mFL7sj997yLDfYd17" target="_blank">Cariola 42, Yerba Buena, Tucumán</a></h3>
-            <br>
-            <div class="centrado">
-                <iframe
+            <section class="form-container">
+                <form action="" method="POST" onsubmit="return validarFormulario()">
+                    <h2>Registrate para recibir las novedades</h2>
+                    <label for="nombre">Nombre: *</label>
+                    <input type="text" name="nombre" id="nombre" >
+                    
+                    <label for="apellido">Apellido: *</label>
+                    <input type="text" name="apellido" id="apellido" >
+                    
+                    <label for="correo">e-Mail: *</label>
+                    <input type="correo" name="correo" id="correo" placeholder="ejemplo@correo.com" >
+                    
+                    <label for="edad">Edad: *</label>
+                    <input type="number" name="edad" id="edad">
+                    
+                    <label for="fecnac">Fecha de Nacimiento:</label>
+                    <input type="date" name="fecnac" id="fecnac">
+                    
+                    <p class="campos-obligatorios">* Campos obligatorios</p>
+                    <input type="submit" value="Enviar Datos">
+                    <input type="reset" value="Borrar Datos">
+                </form>
+                <form action="" method="POST" onsubmit="return validarFormulario_contacto()">
+                    <h2>Formulario de contacto</h2>                
+                    <label for="nombre">Nombre: *</label>
+                    <input type="text" name="nombre" id="nombre_contacto" >
+                    
+                    <label for="apellido">Apellido: *</label>
+                    <input type="text" name="apellido" id="apellido_contacto" >
+                    
+                    <label for="correo">e-Mail: *</label>
+                    <input type="correo" name="correo" id="correo_contacto" placeholder="ejemplo@correo.com" >
+                    
+                    <label for="comentarios">Consulta: *</label>
+                    <textarea name="comentarios" id="comentarios_contacto"  placeholder="Escriba su consulta..."></textarea>
+                    <p class="campos-obligatorios">* Campos obligatorios</p>
+                    <input type="submit" value="Enviar comentarios">
+                    <input type="reset" value="Borrar">
+                    
+                </form>
+            </section>
+    </main>        
+            <h2 class="donde-estamos">¿Donde estamos?</h2>
+            <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.5706474082294!2d-65.26985252546088!3d-26.821796489409515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225cdcab3eadeb%3A0xd7757ecff290d4da!2sPortal%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1694354293838!5m2!1ses!2sar"
-                width="50%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>   
-            </div>
-            <p id="arriba">
-                <a href="#arriba">Ir arriba</a><br>
-            </p>
-    </main>
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
 
-    <footer>
-        <a href="https://twitter.com" target="_blank"><img class="icono" src="img/icono_twitter.png" alt="twitter"></a>
-        <a href="https://facebook.com" target="_blank"><img class="icono" src="img/icono_facebook.png" alt="facebook"></a>
-        <a href="https://instagram.com" target="_blank"><img class="icono" src="Img/icono_instagram.png" alt="instagram"></a>
-        <a href="https://api.whatsapp.com/send?phone=543816166743" target="_blank"><img class="icono" src="img/icono_whatsapp.png" alt="whatsapp"></a>
-        <p>Derechos reservados @2023</p>
-        <br>
+    <footer class="footer">
+        <div class="texto-footer">
+            <p>/Cinemacines</p>
+            <p>Shopping Portal Tucumán <br> Yerba Buena - Tucumán - Argentina</p>
+        </div>
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/" target="_blank"><i id="redes" class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i id="redes" class="bi bi-instagram"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i id="redes" class="bi bi-twitter-x"></i></a>
+        </div>
+
     </footer>
-
+    <script src="./js/main.js"></script>
+    <script src="./js/registro.js"></script>
 </body>
-
 </html>

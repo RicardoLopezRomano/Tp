@@ -5,49 +5,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon2.png" type="image/x-icon">
-    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Cinema</title>
 </head>
 
 <body>
     <header>
-        <a name="arriba"><img src="img/logo 2.png" alt="logo Cinema" width="250"></a>
-        <nav>
+        <a name="arriba"><img id="logo" src="img/logo 2.png" alt="logo Cinema"></a>
+
+        <nav id="navbar">
             <ul>
-                <li><a href="index.html" target="_blank">Inicio</a></li></li>
-                <li><a href="proximosestrenos.html" target="_blank">Proximos Estrenos</a></li>
-                <li><a href="nuestrassalas.html" target="_blank">Nuestras Salas</a></li>
-                <li><a href="contacto.html" target="_blank">Contacto</a></li>
-                <li><a href="registrese.html" target="_blank">Registrese</a></li>
-            </ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="proximosestrenos.html">Proximos Estrenos</a></li>
+                <li><a href="nuestrassalas.html">Nuestras Salas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>            
         </nav>
     </header>
 
     <main>
         <!--Al igual que en el index, estaria bueno llenar esta parte desde una API-->
-        <br>
-        <h2>Próximanente</h2>
-        <br>
-        <div id="contenedor">
-            <div><a class="estreno" href="https://www.youtube.com/embed/-YRw-3dgsjo" target="_blank"> <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/j5vjwspZDzN4LYLjB2Kbm4gSYZL.jpg" alt="Wonka" width="80%"></div>
-            <div><a class="estreno "href="https://www.youtube.com/embed/YdhPAyApRQ4" target="_blank"> <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/v2NN1TMK3ifuiEyawa3ukkcSOUQ.jpg" alt="Duna 2" width="80%"></a></div>
-            <div><a class="estreno" href="https://www.youtube.com/embed/PLE9k243T04" target="_blank"> <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/Anvux3wa95hseYtSAqbAyb29qYe.jpg" alt="Killers of the flower moon" width="80%"></a></div>
-            <div><a class="estreno" href="https://www.youtube.com/embed/Ofn8sr3glwc" target="_blank"> <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/A8d1dM9Q8ambJV00RV46BtZTuFi.jpg" alt="Exorcista Creyentes" width="80%"></a></div>
-            <div> <a class="estreno" href="https://www.youtube.com/embed/8I2QWyeWPd4" target="_blank"> <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/3J7NQrBSqTvvHJzsge6Qi4NhbGe.jpg" alt="PawPatrol" width="80%"></a></div>
-            <div><a class="estreno" href="https://www.youtube.com/embed/WGIK4p-FJ_M" target="_blank"><img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/t6RSJ1z8bDEYpk4fLwxfkXciUak.jpg" alt="Five Nights" width="80%"></a></div>
-        </div>
-        <p id="arriba">
-            <a href="#arriba">Ir arriba</a><br>
-        </p>
+        <section>
+            <h2>Próximamente</h2>
+            <table border="1">
+                <tr>
+                    <td>
+                        <a href="https://www.youtube.com/embed/-YRw-3dgsjo" target="_blank">
+                            <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/j5vjwspZDzN4LYLjB2Kbm4gSYZL.jpg"
+                                alt="Wonka" width="80%"></a>
+                    </td>
+                    <td>
+                        <a href="https://www.youtube.com/embed/YdhPAyApRQ4" target="_blank">
+                            <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/v2NN1TMK3ifuiEyawa3ukkcSOUQ.jpg"
+                                alt="Duna 2" width="80%"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://www.youtube.com/embed/PLE9k243T04" target="_blank">
+                            <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/Anvux3wa95hseYtSAqbAyb29qYe.jpg"
+                                alt="Killers of the flower moon" width="80%"></a>
+                    </td>
+                    <td>
+                        <a href="https://www.youtube.com/embed/Ofn8sr3glwc" target="_blank">
+                            <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/A8d1dM9Q8ambJV00RV46BtZTuFi.jpg"
+                                alt="Exorcista Creyentes" width="80%"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://www.youtube.com/embed/8I2QWyeWPd4" target="_blank">
+                            <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/3J7NQrBSqTvvHJzsge6Qi4NhbGe.jpg"
+                                alt="PawPatrol" width="80%"></a>
+                    </td>
+                    <td>
+                        <a href="https://www.youtube.com/embed/WGIK4p-FJ_M" target="_blank"><img
+                                src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/t6RSJ1z8bDEYpk4fLwxfkXciUak.jpg"
+                                alt="Five Nights" width="80%"></a>
+                    </td>
+                </tr>
+            </table>
+        </section>
     </main>
 
-    <footer>
-        <a href="https://twitter.com" target="_blank"><img class="icono" src="img/icono_twitter.png" alt="twitter"></a>
-        <a href="https://facebook.com" target="_blank"><img class="icono" src="img/icono_facebook.png" alt="facebook"></a>
-        <a href="https://instagram.com" target="_blank"><img class="icono" src="Img/icono_instagram.png" alt="instagram"></a>
-        <a href="https://api.whatsapp.com/send?phone=543816166743" target="_blank"><img class="icono" src="img/icono_whatsapp.png" alt="whatsapp"></a>
-        <p>Derechos reservados @2023</p>
-        <br>
+    <footer class="footer">
+        <div class="texto-footer">
+            <p>/Cinemacines</p>
+            <p>Shopping Portal Tucumán <br> Yerba Buena - Tucumán - Argentina</p>
+        </div>
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="img/twitter.png" alt="Twitter"></a>
+        </div>
+
     </footer>
 
 </body>
