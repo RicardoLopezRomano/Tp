@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon2.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="proximos_estrenos.js" ></script>
     <title>Cinema</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
-
 <body>
     <header>
         <a name="arriba"><img id="logo" src="img/logo_transparent_2.png" alt="logo Cinema"></a>
@@ -26,38 +24,44 @@
         </nav>
     </header>
 
+    <h2 class="prox">Próximamente</h2>
 
-    <main>
-        <!--Al igual que en el index, estaria bueno llenar esta parte desde una API-->
-        <h2 class="prox">Próximamente</h2>
-           <!-- <table border="">-->
-        <section id="carrusel">
-                        <a href="https://www.youtube.com/embed/-YRw-3dgsjo" target="_blank">
-                            <img class=" peli" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/j5vjwspZDzN4LYLjB2Kbm4gSYZL.jpg"
-                                alt="Wonka"></a>
-
-                        <a href="https://www.youtube.com/embed/YdhPAyApRQ4" target="_blank">
-                            <img class=" peli" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/v2NN1TMK3ifuiEyawa3ukkcSOUQ.jpg"
-                                alt="Duna 2" ></a>
-
-                        <a href="https://www.youtube.com/embed/PLE9k243T04" target="_blank">
-                            <img class=" peli" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/Anvux3wa95hseYtSAqbAyb29qYe.jpg"
-                                alt="Killers of the flower moon"></a>
-
-                        <a href="https://www.youtube.com/embed/Ofn8sr3glwc" target="_blank">
-                            <img class=" peli" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/A8d1dM9Q8ambJV00RV46BtZTuFi.jpg"
-                                alt="Exorcista Creyentes"></a>
-
-                        <a href="https://www.youtube.com/embed/8I2QWyeWPd4" target="_blank">
-                            <img class=" peli" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/3J7NQrBSqTvvHJzsge6Qi4NhbGe.jpg"
-                                alt="PawPatrol"></a>
-                        <a href="https://www.youtube.com/embed/WGIK4p-FJ_M" target="_blank"><img
-                                class=" peli" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/t6RSJ1z8bDEYpk4fLwxfkXciUak.jpg"
-                                alt="Five Nights"></a>
-
-            <a href="#arriba" class="enlacp">Ir arriba</a><br>
-        </section>
-    </main>
+    <div class="transicion">
+        <ul>
+            <li>
+                <a href="https://www.youtube.com/embed/-YRw-3dgsjo" target="_blank">
+                    <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/j5vjwspZDzN4LYLjB2Kbm4gSYZL.jpg" alt="Wonka">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/embed/YdhPAyApRQ4" target="_blank">
+                    <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/v2NN1TMK3ifuiEyawa3ukkcSOUQ.jpg" alt="Duna 2">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/embed/PLE9k243T04" target="_blank">
+                    <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/Anvux3wa95hseYtSAqbAyb29qYe.jpg" alt="Killers of the flower moon">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/embed/Ofn8sr3glwc" target="_blank">
+                    <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/A8d1dM9Q8ambJV00RV46BtZTuFi.jpg" alt="Exorcista Creyentes">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/embed/8I2QWyeWPd4" target="_blank">
+                    <img class=" peli" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/3J7NQrBSqTvvHJzsge6Qi4NhbGe.jpg"
+                        alt="PawPatrol"></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/embed/WGIK4p-FJ_M" target="_blank"><img
+                    class=" peli" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/t6RSJ1z8bDEYpk4fLwxfkXciUak.jpg"
+                    alt="Five Nights"></a>
+            </li>
+        </ul>
+    </div>
+      <a href="#arriba" class="enlacp">Ir arriba</a><br>
+<br>
 
     <footer class="footer">
         <div class="texto-footer">
@@ -72,5 +76,4 @@
     </footer>
 
 </body>
-
 </html>
