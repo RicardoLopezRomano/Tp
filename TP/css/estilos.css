@@ -52,15 +52,16 @@ header {
     color: yellow;
     font-weight: bold;    
   }
+
 /*footer*/
 
 .footer {
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    border-top: 5px solid #F26363;
+   padding: 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+  border-top: 5px solid #F26363;
   }
 
 .texto-footer {
@@ -94,7 +95,7 @@ h2 {
 }
 
 .transicion {
-    max-width: 45%; /* Hacerlo responsive */
+    max-width: 45%; 
     overflow: hidden;
     margin: 50px auto; 
     border-radius: 30px;
@@ -104,17 +105,17 @@ h2 {
 .transicion ul {
     display: flex;
     padding: 0;
-    width: 600%; /* Cambiar a 400% para acomodar 4 elementos */
+    width: 600%; 
     animation: slide 20s infinite alternate ease-in-out;
 }
 
 .transicion li {
-    width: 25%; /* Cambiar a 25% para acomodar 4 elementos */
+    width: 16.67%; 
     list-style: none;
 }
 
 .transicion img {
-    width: 100%; /* Hacer las imágenes 100% del ancho del contenedor */
+    width: 100%; 
 }
 
 .enlacp{
@@ -125,26 +126,27 @@ h2 {
     color: #F26363;
 
 
-
-@keyframes slide {
-    0% {margin-left: 0;}
-    16.67% {margin-left: 0;}
-
-    20% {margin-left: -100%;}
-    33.33% {margin-left: -100%;}
-
-    33.33% {margin-left: -200%;}
-    50% {margin-left: -200%;}
-
-    50% {margin-left: -300%;}
-    66.67% {margin-left: -300%;}
-
-    66.67% {margin-left: -400%;}
-    83.33% {margin-left: -400%;}
-
-    83.33% {margin-left: -500%;}
-    100% {margin-left: -500%;}
 }
+@keyframes slide {
+  0% {margin-left: 0;}
+  16.67% {margin-left: 0;}
+
+  20% {margin-left: -100%;}
+  33.33% {margin-left: -100%;}
+
+  33.33% {margin-left: -200%;}
+  50% {margin-left: -200%;}
+
+  50% {margin-left: -300%;}
+  66.67% {margin-left: -300%;}
+
+  66.67% {margin-left: -400%;}
+  83.33% {margin-left: -400%;}
+
+  83.33% {margin-left: -500%;}
+  100% {margin-left: -500%;}
+}
+
 /* Media query para pantallas más pequeñas, como teléfonos */
 @media (max-width: 768px) {
     header {
@@ -165,4 +167,4 @@ h2 {
       margin-right: 0;
       margin-bottom: 10px;
     }
-}}
+}
