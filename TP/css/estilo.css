@@ -245,38 +245,70 @@ header {
 /*======FIN FORM======*/
 
 /*======INICIO INDEX======*/
-#container {
-  width: 100%;
+#contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.cartelera {
+  display: flex;
+  margin: 20px 0;
+}
+
+.pelicula img {
+  max-width: 400px;
+  height: 560px;
+}
+
+.info {
+  flex-grow: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.titulo h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.datos {
   display: flex;
   flex-wrap: wrap;
 }
 
-#container section {
-  flex: 2;
-  flex-direction: row;
+.dato {
+  margin-right: 20px;
+  display: flex;
   align-items: center;
-  margin: 8px;
-  padding: 13px;
-  border-radius: 5px;
+}
+
+.dato img {
+  margin-right: 5px;
+  max-width: 20px;
+  height: auto;
+}
+
+.sinopsis {
+  margin-top: 20px;
+}
+
+.sinopsis h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.sinopsis p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.trailer {
   text-align: center;
-  background-color: rgb(165, 165, 165);
-  
+  padding: 20px;
 }
 
-#container section img {
-  box-shadow: 0 10px 6px -6px rgba(6,4,12,0.801);
-  max-width: 300px;
-  height: 450px;
-  border-radius: 5px;
-  transition: transform .5s ease;
-}
-
-#container section img:hover{
-  transform: scale(1.1);
-}
-
-h2 {
-  margin-bottom: 20px;
-  margin-top: auto;
-}
 /*======FIN INDEX======*/
