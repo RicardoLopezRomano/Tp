@@ -3,7 +3,6 @@
     padding: 0;
     font-family: lato;
     box-sizing: border-box;
-    background-color:  #333;
 }
 
 /*header*/
@@ -11,19 +10,22 @@
 #logo {
     
     width: 250px;
+    background-color: #333;
+
   }
 
 header {
     display: flex; 
     align-items: center; 
     justify-content: space-between;
-    padding: 30px;
+    padding: 1px 20px;
     border-bottom: 5px solid #F26363;
+    background-color: #333;
+
   }
 
 #navbar {
     text-align:  right;
-   
 }
 
 #navbar ul {
@@ -31,12 +33,14 @@ header {
     margin: 0;
     padding: 0;
     display: flex;
+  
+
    
   }
-
 #navbar li {
     display: inline-block;
     margin-right: 15px;
+
   
   }
 
@@ -50,7 +54,9 @@ header {
     font-family: sans-serif;
     text-decoration: none;
     color: yellow;
-    font-weight: bold;    
+    font-weight: bold;   
+    background-color: #333;
+ 
   }
 
 /*footer*/
@@ -62,6 +68,8 @@ header {
    align-items: center;
    flex-wrap: wrap;
   border-top: 5px solid #F26363;
+  background-color: #333;
+  
   }
 
 .texto-footer {
@@ -87,46 +95,89 @@ header {
   }
 
 /* proximos estrenos */
-h2 {
-    text-align: center;
-    font-size: 2rem;
-    padding-top: 20px; 
-    color: yellow;
+
+body{
+  background-color: gray;
 }
 
+.titulo {
+    text-align: center;
+    font-size: 2rem;
+    color: #0a0a0a;
+    color:yellow;
+    background-color: #F26363;
+}
+
+
 .transicion {
-    max-width: 45%; 
+    width: 340px;
+    height: 500px;
     overflow: hidden;
     margin: 50px auto; 
     border-radius: 30px;
     border: 5px solid #F26363;
+    position: relative;
+   
+    
 }
 
 .transicion ul {
     display: flex;
     padding: 0;
     width: 600%; 
-    animation: slide 20s infinite alternate ease-in-out;
+    animation: slide 10s infinite alternate ease-in-out;
 }
 
 .transicion li {
     width: 16.67%; 
     list-style: none;
+   
 }
 
 .transicion img {
-    width: 100%; 
+    height: 500px; 
+   
+}
+/*
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #F26363;
+  color: #333;
+  border: none;
+  border-radius: 50%; 
+  width: 30px; 
+  height:50px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  cursor: pointer;
 }
 
+.transicion .prev {
+  left: 0;
+}
+
+.transicion .next {
+  right: 0;
+}
+
+.prev:hover{
+  color:yellow;
+}
+.next:hover{
+  color:yellow;
+}
+*/
 .enlacp{
     color:yellow;
     margin-left: 15px;
 }
 .enlacp:hover{
     color: #F26363;
-
-
 }
+
 @keyframes slide {
   0% {margin-left: 0;}
   16.67% {margin-left: 0;}
@@ -146,6 +197,7 @@ h2 {
   83.33% {margin-left: -500%;}
   100% {margin-left: -500%;}
 }
+
 
 /* Media query para pantallas más pequeñas, como teléfonos */
 @media (max-width: 768px) {
@@ -167,4 +219,8 @@ h2 {
       margin-right: 0;
       margin-bottom: 10px;
     }
+
+  
 }
+
+
